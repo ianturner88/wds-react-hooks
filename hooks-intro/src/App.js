@@ -1,21 +1,10 @@
 import React, { useState } from 'react';
+import Hook1 from './hooks/Hook1-useState';
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  function decrementCount() {
-    setCount((previousCount) => previousCount - 1);
-  }
-
-  function updateCount() {
-    setCount((previousCount) => previousCount + 1);
-  }
-
   return (
     <>
-      <button onClick={decrementCount}>-</button>
-      <span>{count}</span>
-      <button onClick={updateCount}>+</button>
+      <Hook1 />
     </>
   );
 }
