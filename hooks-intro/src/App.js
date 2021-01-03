@@ -4,11 +4,12 @@ import Hook2 from './hooks/Hook2-useEffect';
 import Hook3 from './hooks/Hook3-useEffect';
 import Hook4 from './hooks/Hooks4-useMemo';
 import Hook5 from './hooks/Hooks5-useRef';
+import Hook6 from './hooks/Hooks6-useRef';
 
 function App() {
   return (
     <>
-      <Hook5 />
+      <Hook6 />
     </>
   );
 }
