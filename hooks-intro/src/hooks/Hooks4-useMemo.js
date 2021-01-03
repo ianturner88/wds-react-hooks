@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 
 function Hook4() {
   const [number, setNumber] = useState(0);
   const [dark, setDark] = useState(false);
-  const doubleNumber = slowFunction(number);
+  const doubleNumber = useMemo(() => {
+    return slowFunction(number);
+  }, [number]);
   const themeStyles = {
     backgroundColor: dark ? 'black' : 'white',
     color: dark ? 'white' : 'black',
