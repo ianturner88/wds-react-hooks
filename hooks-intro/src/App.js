@@ -7,11 +7,12 @@ import Hook5 from './hooks/Hooks5-useRef';
 import Hook6 from './hooks/Hooks6-useRef';
 import Hook7 from './hooks/Hooks7-useContext';
 import Hook8 from './hooks/Hooks8-useReducer';
+import Hook9 from './hooks/Hooks9-useReducer';
 
 function App() {
   return (
     <>
-      <Hook8 />
+      <Hook9 />
     </>
   );
 }
